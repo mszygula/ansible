@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+   
+   - name: Reboot
+     shell: 'sleep 1 && sudo reboot && sleep 1'
+     async: 1
+     poll: 0
+     become: true
+
+    
