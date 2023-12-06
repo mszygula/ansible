@@ -4,7 +4,7 @@
   tasks:
    
    - name: Reboot
-     shell: 'sleep 1 && sudo reboot && sleep 1'
+     shell: 'sleep {{SLP}} && sudo reboot && sleep 1'
      async: 1
      poll: 0
      become: true
